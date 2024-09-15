@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:latest
 
 WORKDIR /app
 
@@ -14,4 +14,4 @@ RUN pnpm run build
 
 EXPOSE 8080
 
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]
